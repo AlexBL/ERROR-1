@@ -392,7 +392,7 @@ html {
 }
 
 body {
-  background: #FFFFFF;
+  background: #ffffff;
   color: #000000;
   line-height: 1;
 }
@@ -3138,7 +3138,7 @@ body {
  * ============================================ */
 .header-language-background {
   padding: 10px;
-  background-color: #69e890;
+  background-color: #ff2f30;
   text-transform: uppercase;
 }
 .header-language-background .header-language-container {
