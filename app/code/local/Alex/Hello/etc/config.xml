@@ -1,24 +1,24 @@
-    <?xml version="1.0"?>
-    <config>
-        <modules>
-            <Alex_Hello>
-                <version>0.0.1</version>
-            </Alex_Hello>
-        </modules>
-        <frontend>
-            <routers>
-                <hello>
-                    <use>standard</use>
-                    <args>
-                        <module>Alex_Hello</module>
-                        <frontName>hello</frontName>
-                    </args>
+<?xml version="1.0"?>
+<config>
+    <modules>
+         <Alex_Hello>
+            <version>0.0.1</version>
+        </Alex_Hello>
+    </modules>
+    <frontend>
+        <routers>
+            <hello>
+                <use>standard</use>
+                <args>
+                    <module>Alex_Hello</module>
+                    <frontName>hello</frontName>
+                </args>
                 </hello>
-            </routers>
-            <layout>
-                <updates>
+        </routers>
+        <layout>
+            <updates>
                     <hello>
-                        <file>hello.xml</file>
+                      <file>hello.xml</file>
                     </hello>
                 </updates>
             </layout>
