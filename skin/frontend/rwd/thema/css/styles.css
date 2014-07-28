@@ -1499,7 +1499,7 @@ a.button:hover {
  * Global Site Notice
  */
 .global-site-notice {
-  background: #676157;
+  background: #1d1d1c;
   color: #e6e6e6;
   font-size: 11px;
 }
@@ -1514,7 +1514,7 @@ a.button:hover {
   padding-top: 14.5px;
   padding-bottom: 14.5px;
   background-image: url("../images/demo-logo.png");
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .global-site-notice p {
@@ -3138,8 +3138,8 @@ body {
  * ============================================ */
 .header-language-background {
   padding: 10px;
-  background-color: #ff2f30;
-  text-transform: uppercase;
+  /*background-color: #ff2f30;*/
+  background: url(../images/Media/Pagani_Thema_Header.png);
 }
 .header-language-background .header-language-container {
   max-width: 1200px;
