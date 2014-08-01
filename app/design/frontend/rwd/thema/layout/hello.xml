@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+
+    <hello_index_index>
+
+        <reference name="content">
+
+            <block type="core/template" name="hello" template="hello/hello.phtml" />
+
+        </reference>
+
+    </hello_index_index>
+
+</layout>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+
+    <hello_adminhtml_hello_index>
+
+        <reference name="content">
+
+            <block type="hello/adminhtml_hello" name="hello" />
+
+        </reference>
+
+    </hello_adminhtml_hello_index>
+
+</layout>

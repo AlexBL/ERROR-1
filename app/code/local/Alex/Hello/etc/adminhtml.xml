@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<config>
+
+    <menu>
+
+        <hello module="hello">
+
+            <title>Hello</title>
+
+            <sort_order>71</sort_order>                
+
+            <children>
+
+                <items module="hello">
+
+                    <title>Manage Items</title>
+
+                    <sort_order>0</sort_order>
+
+                    <action>hello/adminhtml_hello</action>
+
+                </items>
+
+            </children>
+
+        </hello>
+
+    </menu>
+
+    <acl>
+
+        <resources>
+
+            <all>
+
+                <title>Allow Everything</title>
+
+            </all>
+
+            <admin>
+
+                <children>
+
+                    <hello>
+
+                        <title>Hello Module</title>
+
+                        <sort_order>200</sort_order>
+
+                    </hello>
+
+                </children>
+
+            </admin>
+
+        </resources>    
+
+    </acl>
+
+    <layout>
+
+        <updates>
+
+            <hello>
+
+                <file>hello.xml</file>
+
+            </hello>
+
+        </updates>
+
+    </layout>
+
+</config>
