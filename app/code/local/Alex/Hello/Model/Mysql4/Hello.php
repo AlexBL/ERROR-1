@@ -4,6 +4,6 @@
     {
         public function _construct()
         {   
-            $this->_init('<hello>/<hello>', '<hello>_id');
+            $this->_init('hello/hello', 'hello_id');
         }
     }

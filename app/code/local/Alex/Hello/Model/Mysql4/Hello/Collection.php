@@ -5,6 +5,6 @@
         public function _construct()
         {
             //parent::__construct();
-            $this->_init('<hello>/<hello>');
+            $this->_init('hello/hello');
         }
     }

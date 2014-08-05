@@ -40,17 +40,17 @@ class Alex_Hello_Adminhtml_HelloController extends Mage_Adminhtml_Controller_Act
 
     {
 
-        $<module>Id     = $this->getRequest()->getParam('id');
+        $helloId     = $this->getRequest()->getParam('id');
 
-        $<module>Model  = Mage::getModel('hello/hello')->load($<module>Id);
-
- 
-
-        if ($<module>Model->getId() || $<module>Id == 0) {
+        $helloModel  = Mage::getModel('hello/hello')->load($helloId);
 
  
 
-            Mage::register('hello_data', $<module>Model);
+        if ($helloModel->getId() || $helloId == 0) {
+
+ 
+
+            Mage::register('hello_data', $helloModel);
 
  
 
@@ -110,11 +110,11 @@ class Alex_Hello_Adminhtml_HelloController extends Mage_Adminhtml_Controller_Act
 
                 $postData = $this->getRequest()->getPost();
 
-                $<module>Model = Mage::getModel('hello/hello');
+                $helloModel = Mage::getModel('hello/hello');
 
                 
 
-                $<module>Model->setId($this->getRequest()->getParam('id'))
+                $helloModel->setId($this->getRequest()->getParam('id'))
 
                     ->setTitle($postData['title'])
 
@@ -128,7 +128,7 @@ class Alex_Hello_Adminhtml_HelloController extends Mage_Adminhtml_Controller_Act
 
                 Mage::getSingleton('adminhtml/session')->addSuccess(Mage::helper('adminhtml')->__('Item was successfully saved'));
 
-                Mage::getSingleton('adminhtml/session')->set<Module>Data(false);
+                Mage::getSingleton('adminhtml/session')->setHello>Data(false);
 
  
 
@@ -140,7 +140,7 @@ class Alex_Hello_Adminhtml_HelloController extends Mage_Adminhtml_Controller_Act
 
                 Mage::getSingleton('adminhtml/session')->addError($e->getMessage());
 
-                Mage::getSingleton('adminhtml/session')->set<Module>Data($this->getRequest()->getPost());
+                Mage::getSingleton('adminhtml/session')->setHelloData($this->getRequest()->getPost());
 
                 $this->_redirect('*/*/edit', array('id' => $this->getRequest()->getParam('id')));
 
@@ -164,11 +164,11 @@ class Alex_Hello_Adminhtml_HelloController extends Mage_Adminhtml_Controller_Act
 
             try {
 
-                $<module>Model = Mage::getModel('hello/hello');
+                $helloModel = Mage::getModel('hello/hello');
 
                 
 
-                $<module>Model->setId($this->getRequest()->getParam('id'))
+                $helloModel->setId($this->getRequest()->getParam('id'))
 
                     ->delete();
 

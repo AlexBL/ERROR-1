@@ -82,13 +82,13 @@ class Alex_Hello_Block_Adminhtml_Hello_Edit_Tab_Form extends Mage_Adminhtml_Bloc
 
         
 
-        if ( Mage::getSingleton('adminhtml/session')->get<Module>Data() )
+        if ( Mage::getSingleton('adminhtml/session')->getHelloData() )
 
         {
 
-            $form->setValues(Mage::getSingleton('adminhtml/session')->get<Module>Data());
+            $form->setValues(Mage::getSingleton('adminhtml/session')->getHelloData());
 
-            Mage::getSingleton('adminhtml/session')->set<Module>Data(null);
+            Mage::getSingleton('adminhtml/session')->setHelloData(null);
 
         } elseif ( Mage::registry('hello_data') ) {
 
