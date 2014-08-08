@@ -128,7 +128,7 @@ class Alex_Hello_Adminhtml_HelloController extends Mage_Adminhtml_Controller_Act
 
                 Mage::getSingleton('adminhtml/session')->addSuccess(Mage::helper('adminhtml')->__('Item was successfully saved'));
 
-                Mage::getSingleton('adminhtml/session')->setHello>Data(false);
+                Mage::getSingleton('adminhtml/session')->setHelloData(false);
 
  
 
